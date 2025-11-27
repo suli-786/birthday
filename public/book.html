@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+    <link rel="stylesheet" href="/styles/book.css" />
+  </head>
+  <body>
+    <div class="cover">
+      <div class="book">
+        <label for="page-1" class="book__page book__page--1">
+          <img src="/images/ayesha.svg" alt="Book cover" />
+        </label>
+
+        <label for="page-2" class="book__page book__page--4">
+          <div class="page__content">
+            <h1 class="page__content-title">III</h1>
+            <div class="page__content-text">
+              <p>And look at us now — living our lives in reverse.</p>
+              <p>You’re staying where I used to live, and I’m moving to where you lived. Two siblings swapping locations like we accidentally pressed “shuffle life.”</p>
+              <p>And even though we’re distant, you still feel like someone I’d protect, someone I care about more than I ever say, and someone I can tease endlessly because let’s be honest… you are extremely questionable.</p>
+              <p>But you’re also kind, talented, soft-hearted, and you deserve the kind of future you dream about.</p>
+              <p>Even if you still send me dessert pics just to annoy me. (It’s fine. I send them back.)</p>
+            </div>
+            <div class="page__number">3</div>
+          </div>
+        </label>
+
+        <input type="radio" name="page" id="page-1" />
+        <input type="radio" name="page" id="page-2" />
+
+        <label class="book__page book__page--2">
+          <div class="book__page-front">
+            <div class="page__content">
+              <h1 class="page__content-book-title">Page 1</h1>
+              <h2 class="page__content-author">Dear Ayesha</h2>
+
+              <p class="page__content-credits">
+                
+                <span>A little story for a very special person.</span>
+              </p>
+
+              <p class="page__content-credits">
+                Yes, this book is about you.
+                
+              </p>
+
+              <div class="page__content-copyright">
+                
+                <p>Turn over the page →</p>
+              </div>
+            </div>
+          </div>
+          <div class="book__page-back">
+            <div class="page__content">
+              <h1 class="page__content-title">II</h1>
+              <div class="page__content-text">
+                <p>Ayesha,</p>
+                <p>for most of our lives we were like two characters in the same book… but on completely different pages.</p>
+                <p>You were on one end of the country, I was on the other, and somehow we grew up without really knowing each other.</p>
+                <p>But even with that distance, you’ve always had this soft, shy, introverted energy that somehow still manages to send me dessert pics just to make me jealous.</p>
+                <p>I don’t know much about your cooking, because you’ve never fed me (rude), but I know you bake, you cook, you draw, and you chase the dream of making a lot of money — which honestly I respect.</p>
+              </div>
+              <div class="page__number">2</div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script>
+      (() => {
+        if (typeof confetti !== 'function') return
+        confetti({
+          particleCount: 60,
+          startVelocity: 25,
+          spread: 70,
+          ticks: 120,
+          origin: { x: 0.5, y: 0 },
+          scalar: 0.8,
+          disableForReducedMotion: true,
+        })
+      })()
+    </script>
+  </body>
+</html>
