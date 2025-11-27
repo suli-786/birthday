@@ -100,7 +100,7 @@ document.querySelectorAll('[data-next]').forEach((btn) => {
     const currentStep = btn.closest('.step')
     currentStep?.querySelector('.deny-message')?.classList.remove('show')
     if (nextId === 'done') {
-      showSideImage('/assets/images/book.jpg')
+      showSideImage('./assets/images/book.jpg')
       setTimeout(() => showStep(nextId), 800)
       return
     }
@@ -114,7 +114,7 @@ document.querySelectorAll('.btn.no').forEach((btn) => {
     const step = btn.closest('.step')
     showDenyMessage(step)
     if (step?.id === 'step4') {
-      showSideImage('/assets/images/no.jpg')
+      showSideImage('./assets/images/no.jpg')
     }
   })
 })
